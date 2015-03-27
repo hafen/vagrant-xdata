@@ -14,10 +14,10 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   end
 
   # Original starting point of the base box, and deploy script
-  # config.vm.box = "aarong-vagrant/memex-client"
-  # config.vm.provision :shell, :path => "deploy.sh"
+  config.vm.box = "aarong-vagrant/memex-client"
+  config.vm.provision :shell, :path => "deploy.sh"
 
-  config.vm.box ="hafen/xdata-tessera"
+  # config.vm.box ="hafen/xdata-tessera"
 
   # Since we use a Self signed cert..need to set to false
   config.vm.box_download_insecure = "true"
