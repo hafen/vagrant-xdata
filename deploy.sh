@@ -3,6 +3,7 @@
 # R
 sudo yum -y install R
 sudo yum -y install curl-devel
+sudo yum -y install libpng-devel
 
 sudo R CMD javareconf
 sudo su - -c "R -e \"install.packages('rJava', repos='http://www.rforge.net/')\""
