@@ -19,7 +19,7 @@ cd protobuf-$PROTO_BUF_VERSION
 sudo make install
 cd ..
 
-export RHIPE_VERSION=0.75.1.2_hadoop-2
+export RHIPE_VERSION=0.75.1.3_hadoop-2
 
 wget http://ml.stat.purdue.edu/rhipebin/Rhipe_$RHIPE_VERSION.tar.gz
 
