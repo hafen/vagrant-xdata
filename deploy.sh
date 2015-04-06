@@ -15,6 +15,7 @@ sudo su - -c "R -e \"install.packages('devtools', repos='http://cran.rstudio.com
 sudo su - -c "R -e \"install.packages('shiny', repos='http://cran.rstudio.com/')\""
 sudo -E R -e "options(unzip = 'unzip', repos = 'http://cran.rstudio.com/'); library(devtools); install_github('tesseradata/datadr')"
 sudo -E R -e "options(unzip = 'unzip', repos = 'http://cran.rstudio.com/'); library(devtools); install_github('tesseradata/trelliscope')"
+sudo -E R -e "install.packages('fasttime', type='source', repos='http://rforge.net')"
 sudo -E R -e "options(unzip = 'unzip', repos = 'http://cran.rstudio.com/'); library(devtools); install_github('hafen/nxcore')"
 
 export PROTO_BUF_VERSION=2.5.0
