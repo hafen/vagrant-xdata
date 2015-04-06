@@ -4,6 +4,10 @@
 sudo yum -y install R
 sudo yum -y install curl-devel
 sudo yum -y install libpng-devel
+sudo yum -y install screen
+
+sudo mkdir /team6
+sudo mount -t nfs 10.1.92.154:xdata-team6 /team6
 
 sudo R CMD javareconf
 sudo su - -c "R -e \"install.packages('rJava', repos='http://www.rforge.net/')\""
